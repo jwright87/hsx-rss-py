@@ -1,0 +1,10 @@
+{
+  "symbol": "BTC",
+  "name": "Bitcoin",
+  "feeds": [
+    {
+      "source": "Reddit",
+      "url": "https://www.reddit.com/r/Bitcoin/.rss"
+    }
+  ]
+}
