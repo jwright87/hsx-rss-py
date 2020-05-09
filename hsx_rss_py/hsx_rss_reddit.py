@@ -9,7 +9,7 @@ log.basicConfig(level=log.DEBUG)
 
 def get_reddit_posts(request):
     """Parses the request json for a reddit rss url and returns the feed, also in json format"""
-    request_dict = json.loads(request)
+    request_dict = request  # json.loads(request)
     log.debug(f"Getting Reddit Posts for {request_dict['symbol']}")
     url = _get_url(request_dict)
     feed = _get_feed(url)
